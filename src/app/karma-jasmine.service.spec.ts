@@ -67,4 +67,8 @@ describe('KarmaJasmineService', () => {
     const resultado = service.dividir(10, (-5));
     expect(resultado).toBe(-2);
   });
+  it('debería hacer la media entre todos los números de un array', () => {
+    const resultado = service.mediaArray([2,4,6]);
+    expect(resultado).toBe(4);
+  });
 });
